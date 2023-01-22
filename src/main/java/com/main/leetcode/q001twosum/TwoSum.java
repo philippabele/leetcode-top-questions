@@ -25,16 +25,16 @@ public class TwoSum {
             // check constraints
             if (2 > nums.length)
                 return null;
-            if (nums.length > 104)
+            if (nums.length > (int) Math.pow(10, 4))
                 return null;
 
-            if (-109 > nums[i])
+            if ((int) Math.pow(-10, 9) > nums[i])
                 return null;
-            if (nums[i] > 109)
+            if (nums[i] > Math.pow(10, 9))
                 return null;
-            if (-109 > target)
+            if ((int) Math.pow(-10, 9) > target)
                 return null;
-            if (target > 109)
+            if (target > Math.pow(10, 9))
                 return null;
 
             // determine gap
